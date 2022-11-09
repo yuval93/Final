@@ -1,4 +1,4 @@
-// const logout = document.getElementById('logout')
+// const logout = document.getElementById('logout').
 const form = document.getElementById('searchByName')
 const inputValue = $('#name')
 

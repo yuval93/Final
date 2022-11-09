@@ -1,4 +1,4 @@
-//Admin protection
+//Admin protection.
 $(document).ready(function () {
     console.log("here is the user")
     console.log(JSON.parse(localStorage.getItem("user")))
