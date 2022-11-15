@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/custom.css">
+    <link rel="stylesheet" href="../style/adminAddProduct.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Add Products</title>
+</head>
+
+<body>
+    <header>
+        <h1>אריאל קוסמטיקס <span> הוספת מוצר </span></h1>
+
+    </header>
+    <nav>
+        <ul>
+            <li> <i class="fa fa-sign-out fa-2x"></i> <a id="logOut">התנתק </a></li>
+            <li><i class="fa fa-plus-square fa-2x"></i><a href="adminDashboard.html">עמוד מנהל </a></li>
+        </ul>
+    </nav>
+    <section>
+
+        <form class="addProductForm" id="addProductForm">
+            <label id="productName">
+                <i class="fa fa-text-width fa-3x"></i>
+                <input type="text" id="name" value="" placeholder="Product name">
+            </label>
+            <label class="category">
+                <i class="fa fa-list-ul fa-3x"></i>
+                <select type="text" id="categoryId" value="" placeholder="category">
+                    <option class="category" value="" disabled selected>Category</option>
+                </select>
+            </label>
+            <label id="productPrice">
+                <i class="fa fa-sort-numeric-asc fa-3x"></i>
+                <input type="number" id="price" value="" placeholder="Product Price ">
+            </label>
+
+            <label id="productFile">
+                <i class="fa fa-file-image-o" aria-hidden="true"></i>
+                <input type="file" id="image" value="" onchange="previewFile(this);">
+            </label>
+            <img id="previewImg" src="" alt="Placeholder">
+
+            <label id="userRegAction">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </label>
+        </form>
+
+
+    </section>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<script src="../script/adminAddProduct.js">
+</script>
+
+</html>

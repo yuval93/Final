@@ -16,64 +16,52 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"
         integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"
-        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
-        crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 
 <body>
-    <!-- <form id="searchByName">
-        <input type="text" id="name" placeholder="Search">
-        <button id="search">Search</button>
-    </form>
-    <div id="container">
 
+    <header>
+        <h1>אריאל קוסמטיקס <span>עמוד לקוחות</span></h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li> <i class="fa fa-sign-out fa-2x"></i> <a id="logOut">התנתק </a></li>
+            <li> <i class="fa fa-search fa-2x"></i><a onclick="searchCattgory()">חפש בקטגוריה </a></li>
+        </ul>
+    </nav>
+    <div id="catSearch">
     </div>
-    <ul>
-        <li><a href="userIssuedPage.html">Issued Books</a></li>
-        <li><a href="library.html">Library</a></li>
-        <button id="logout">LogOut</button>
-    </ul> -->
+    <section>
+        <div id='product-card-list'>שלום רב מירושלים</div>
+
+    </section>
+
+
 
     <div class="result">
         <div class="abso">
 
         </div>
         <div class="cont">
-            <ul>
-                <li>
-                    <p>User Dashboard</p>
-                </li>
-                <li><i class="fa fa-arrow-right fa-4x"></i><a href="userIssuedPage.html">Issued Books</a></li>
-                <li><i class="fa fa-sign-out fa-4x"></i><button id="logout">Log Out</button></li>
-            </ul>
-
-            <!-- <header>
-                <form id="searchByName">
-                    <div class="icon"><i class="fa fa-search"></i></div>
-                    <input type="text" placeholder="Search" id="name" class="Search">
-                    <input type="submit" value="Submit" id="search">
-                </form>
-            </header> -->
-
-            <div id='product-card-list'>שלום רב מירושלים</div>
-
-
             <div class="result1">
                 <div class="cont1" id="cont">
 
                 </div>
             </div>
 
-
         </div>
     </div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"
+    integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.socket.io/4.5.0/socket.io.min.js"
+    integrity="sha384-7EyYLQZgWBi67fBtVxw60/OWl1kjsfrPFcaU0pp0nAh+i8FD068QogUvg85Ewy1k"
+    crossorigin="anonymous"></script>
 <script src="../script/userDashboard.js"></script>
 
 </html>

@@ -1,4 +1,4 @@
-//If user logged in go to the suitable dashBoard.
+//If user logged in go to the suitable dashBoard
 $(document).ready(function () {
     console.log("here is the user")
     console.log(JSON.parse(localStorage.getItem("user")))

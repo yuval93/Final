@@ -4,7 +4,7 @@ const inputValue = $('#name')
 const cont = $('#cont')
 
 
-//No user protection.
+//No user protection
 $(document).ready(function () {
     console.log("here is the user")
     console.log(JSON.parse(localStorage.getItem("user")))

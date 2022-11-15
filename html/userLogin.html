@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html dir="rtl" lang="he">
 
 <head>
     <meta charset="UTF-8">
@@ -12,8 +12,17 @@
 </head>
 
 <body>
-    <main>
-        <h1 class="userHeader">התחברות משתמשים</h1>
+    <header>
+        <h1>אריאל קוסמטיקס <span>התחברות לקוחות</span></h1>
+    </header>
+    <nav>
+        <ul class="lists">
+            <li><a href="./mainPage.html">עמוד הבית</a></li>
+            <li><a href="./userRegistration.html">הרשמה ללקוחות חדשים</a></li>
+            <!-- <li><a href="./html/adminRegistration.html">Admin Registration</a></li> -->
+        </ul>
+    </nav>
+    <section>
         <form class="userForm" id="userForm">
             <label id="userEmail">
                 <i class="fa fa-envelope fa-3x"></i>
@@ -28,7 +37,9 @@
                 <input type="reset" value="Reset" id="reset">
             </label>
         </form>
-    </main>
+    </section>
+    <footer>
+    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
     <script src="../script/userLogin.js"></script>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html dir="rtl" lang="he">
 
 <head>
     <meta charset="UTF-8">
@@ -12,8 +12,19 @@
 </head>
 
 <body>
-    <main>
-        <h1 class="userHeader">הרשמת משתמשים חדשים</h1>
+    <header>
+        <h1>אריאל קוסמטיקס <span>הרשמת משתמשים חדשים</span></h1>
+
+    </header>
+    <nav>
+        <ul class="lists">
+            <li><a href="./mainPage.html">עמוד הבית</a></li>
+            <li><a href="./userLogin.html">התחבר לצפייה בתכנים</a></li>
+
+        </ul>
+    </nav>
+    <section>
+
         <form class="userRegForm" id="userRegForm">
             <label id="userRegName">
                 <i class="fa fa-user fa-3x"></i>
@@ -22,10 +33,10 @@
             <label id="userRegEmail">
                 <i class="fa fa-envelope fa-3x"></i>
                 <input type="text" id="lastName" value="" placeholder="Last name ">
-            </label>
+            </label>s
             <label id="userRegPass">
                 <i class="fa fa-lock fa-3x"></i>
-                <input type="text" id="username" value="" placeholder="User nam ">
+                <input type="text" id="username" value="" placeholder="User name">
             </label>
             <label id="userConRegPass">
                 <i class="fa fa-lock fa-3x"></i>
@@ -36,7 +47,7 @@
                 <input type="reset" value="Reset">
             </label>
         </form>
-    </main>
+    </section>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
